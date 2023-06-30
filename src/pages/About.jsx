@@ -24,6 +24,19 @@ const About = () => {
             </h5>
 
             <div className="mt-[20px]">
+              {/* warning paragraph */}
+              <p className="font-epilogue font-normal text-[16px] text-[#997777] leading-[26px] text-justify">
+                Please note that Nov3l currently uses the Sepolia Ethereum test
+                net. Work must be funded with Sepolia Ethereum for now.
+                Eventually, when we move to the Ethereum main net, all fiction
+                uploaded prior will not be available, and any NFTs minted on
+                Sepolia will be void. Until we move to the Ethereum main net, it
+                is advised you only upload test documents to test the service,
+                and do not upload any real work.
+              </p>
+            </div>
+
+            <div className="mt-[20px]">
               {/* about paragraph */}
               <p className="font-epilogue font-normal text-[16px] text-[#D8D8D8] leading-[26px] text-justify">
                 Nov3l aims to become the home of new writing talent. It allows

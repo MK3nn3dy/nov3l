@@ -53,8 +53,8 @@ const Donate = () => {
             handleClick={handleDonateToSite}
           />
         ) : (
-          <div className="my-[20px] p-4 bg-[#13131a] rounded-[10px]">
-            <p className="font-epilogue font-normal leading-[22px] text-[#cc9999]">
+          <div className="my-[20px] p-4 bg-[#13131a] rounded-[10px] text-center">
+            <p className="font-epilogue font-normal leading-[22px] text-[#cc9999] text-center">
               Please connect your Metamask wallet to donate to Nov3l.
             </p>
           </div>
