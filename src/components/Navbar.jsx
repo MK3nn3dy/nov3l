@@ -114,15 +114,9 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="flex mx-4">
-            <CustomButton
-              btnType="button"
-              title={address ? "Upload" : "Connect"}
-              styles={address ? "bg-[#1dc071]" : "bg-[#FC8BFF] text-[#000000]"}
-              handleClick={() => {
-                if (address) navigate("create-campaign");
-                else connect(); // string for now until implemented
-              }}
-            />
+            <p className="text-[#ff9999]">
+              Visit the desktop site to connect your wallet and upload!
+            </p>
           </div>
         </div>
       </div>
