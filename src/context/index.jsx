@@ -136,10 +136,10 @@ export const StateContextProvider = ({ children }) => {
   const [searchTerm, setSearchTerm] = useState("");
 
   // context state for genre
-  const [genreFilter, setGenreFilter] = useState("Adventure");
+  const [genreFilter, setGenreFilter] = useState("");
 
   // context state for type
-  const [fictionTypeFilter, setFictionTypeFilter] = useState("Short Story");
+  const [fictionTypeFilter, setFictionTypeFilter] = useState("");
 
   // what we actually return - the context wrapper, the value being the object we can destructure from when we run useStateContext()
   return (
