@@ -9,3 +9,4 @@ export { default as Loader } from "./Loader";
 export { default as DropDown } from "./DropDown";
 export { default as Filter } from "./Filter";
 export { default as Thank } from "./Thank";
+export { default as ScrollToTop } from "./ScrollToTop";

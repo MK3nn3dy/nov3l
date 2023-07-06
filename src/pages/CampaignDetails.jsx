@@ -83,7 +83,25 @@ const CampaignDetails = () => {
       {/* upper content */}
       <div className="w-full flex md:flex-row flex-col mt-10 gap-[30px]">
         {/* image and percentage */}
-        <div className="flex-1 flex-col">
+        <div className="flex-1 flex-col relative">
+          {/* title above image */}
+          <div className="absolute top-[1rem] p-2 bg-gradient-to-r from-[#13131a] to-transparent">
+            {/* creator title above image */}
+            <h4 className="font-epilogue font-semibold text-[22px] text-white uppercase">
+              {state.title}
+            </h4>
+            {/* genre and type above image */}
+            <div className="flex flex-row items-center">
+              <img
+                src={tagType}
+                alt="tag"
+                className="w-[17px] h-[17px] object-contain"
+              />
+              <p className="ml-[12px] mt-[2px] font-epilogue font-medium text-[12px] text-white">
+                {state.genre + ", " + state.fictionType}
+              </p>
+            </div>
+          </div>
           {/* image */}
           <img
             src={imgUrl}

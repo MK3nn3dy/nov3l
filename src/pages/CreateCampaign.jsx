@@ -288,7 +288,7 @@ const CreateCampaign = () => {
             alt="money"
             className="w-[40px] h-[40px] object-contain"
           />
-          <h4 className="font-epilogue font-bold text-[25px] text-white ml-[20px]">
+          <h4 className="font-epilogue font-bold text-[18px] md:text-[25px] text-white ml-[20px]">
             You will get 100% of the donationed Ethereum!
           </h4>
         </div>
@@ -319,11 +319,20 @@ const CreateCampaign = () => {
 
         {/* submit button */}
         <div className="flex justify-center items-center mt-[40px]">
-          <CustomButton
-            btnType="submit"
-            title="Submit New Script"
-            styles="bg-[#1dc071]"
-          />
+          {address ? (
+            <CustomButton
+              btnType="submit"
+              title="Submit New Script"
+              styles="bg-[#1dc071]"
+            />
+          ) : (
+            <button
+              className={`font-epilogue font-semibold text-[16px] leading-[26px] text-white min-h-[52px] px-4 rounded-[10px] bg-[#444444]`}
+              disabled
+            >
+              Please Connect
+            </button>
+          )}
         </div>
       </form>
     </div>
