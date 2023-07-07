@@ -289,7 +289,7 @@ const CreateCampaign = () => {
             className="w-[40px] h-[40px] object-contain"
           />
           <h4 className="font-epilogue font-bold text-[18px] md:text-[25px] text-white ml-[20px]">
-            You will get 100% of the donationed Ethereum!
+            You will get 100% of the donated Ethereum!
           </h4>
         </div>
 

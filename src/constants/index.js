@@ -18,7 +18,7 @@ export const navlinks = [
     link: "/",
   },
   {
-    name: "new script",
+    name: "upload fiction",
     imgUrl: journalPlus,
     link: "/create-campaign",
   },
