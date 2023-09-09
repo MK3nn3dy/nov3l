@@ -7,6 +7,7 @@ import {
   useContractWrite,
 } from "@thirdweb-dev/react";
 import { ethers } from "ethers";
+import { contractABI } from "../constants";
 
 // create context
 const StateContext = createContext();
@@ -16,7 +17,8 @@ export const StateContextProvider = ({ children }) => {
   // get fundme contract with useAddress and save to variable
   const { contract } = useContract(
     // newest contract that does everything:
-    "0xC659a47E8784Fdd25dA46C8499728a9AFb20F19a"
+    "0xC659a47E8784Fdd25dA46C8499728a9AFb20F19a",
+    contractABI
   );
 
   // create a write function and give it the createCampaign name / alias,
